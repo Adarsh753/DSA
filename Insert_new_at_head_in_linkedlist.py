@@ -13,7 +13,7 @@ def Insert_at_begin(self,  new_data):
 
 '''Insertnew node at end'''
 def Insert_at_end(self,new_data):
-    new_node=Node(new_data)
+    new_node=Node(new_data) # type: ignore
     if self.head is None:
         self.head=new_node
         return
